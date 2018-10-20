@@ -1,0 +1,23 @@
+{
+  "name": "asuradagsx",
+  "version": "1.0.0",
+  "description": "for asurada",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fizzinsummor/AsuradaGSX.git"
+  },
+  "keywords": [
+    "line",
+    "bot"
+  ],
+  "author": "albert",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fizzinsummor/AsuradaGSX/issues"
+  },
+  "homepage": "https://github.com/fizzinsummor/AsuradaGSX#readme"
+}

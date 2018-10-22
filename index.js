@@ -45,6 +45,11 @@ bot.on('message', function(event) {
     }
 });
 app.post('/webhook', linebotParser);
+// ping pong heartbeat.
+app.get('/ping', function (req, res) {
+    res.send('pong');
+});
+
 // 在 localhost 走 8080 port
 let server = app.listen(process.env.PORT || 8080, function() {
     let port = server.address().port;

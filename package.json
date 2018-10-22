@@ -4,7 +4,8 @@
   "description": "for asurada",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ."
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/fizzinsummor/AsuradaGSX/issues"
   },
-  "homepage": "https://github.com/fizzinsummor/AsuradaGSX#readme"
+  "homepage": "https://github.com/fizzinsummor/AsuradaGSX#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "linebot": "^1.4.1",
+    "util": "^0.11.0"
+  }
 }

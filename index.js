@@ -1,9 +1,11 @@
 let linebot = require('linebot'),
-    express = require('express');
+    express = require('express'),
+    // botEx = require('bot-express'),
+    coffee = require('./coffee');
+
 const config = require('./config.json');
 let bot = linebot(config);
-const linebotParser = bot.parser(),
-    app = express();
+const app = express();
 bot.on('message', function(event) {
     // 把收到訊息的 event 印出來
     console.log(event);
@@ -44,11 +46,14 @@ bot.on('message', function(event) {
         });
     }
 });
-app.post('/webhook', linebotParser);
 // ping pong heartbeat.
 app.get('/ping', function (req, res) {
     res.send('pong');
 });
+app.get('/:coffeeReq', function (req, res) {
+    res.send(coffee.getCoffeeRatio(req.params.coffeeReq));
+});
+
 
 // 在 localhost 走 8080 port
 let server = app.listen(process.env.PORT || 8080, function() {

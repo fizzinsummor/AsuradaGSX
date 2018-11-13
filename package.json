@@ -22,8 +22,10 @@
   },
   "homepage": "https://github.com/fizzinsummor/AsuradaGSX#readme",
   "dependencies": {
+    "bot-express": "^0.5.8",
     "express": "^4.16.4",
     "linebot": "^1.4.1",
+    "nodemon": "^1.18.5",
     "util": "^0.11.0"
   }
 }
